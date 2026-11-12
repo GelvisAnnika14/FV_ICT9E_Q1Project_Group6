@@ -1,49 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>OBMC LP</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBMC LP</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .hero {
+      position: relative;
+      height: 90vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: slideshow 15s infinite;
+    }
+
+    .bg1 {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg');
+      animation-delay: 0s;
+    }
+
+    .bg2 {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/dd77fda9-d2bd-47aa-9576-830b020639f2/JAR_4005a+%281%29.jpg');
+      animation-delay: 5s;
+    }
+
+    .bg3 {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/636b5e138fd7c9613e2a8b61/b5d157ee-eab4-4d7d-aba9-b1cbb78c32a6/OBMC+Primary+Classroom.jpg');
+      animation-delay: 10s;
+    }
+
+    .tint {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-text {
+      position: relative;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes slideshow {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+      10% {
+        opacity: 1;
+      }
+      30% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="" alt="OBMC_logo" class="img-fluid rounded-circle" style="height: 60px; width: 60px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-     </div>
- </div>
-</nav>
 
-<div class="container-fluid m-0 p-0">
-	<div class="row">
-		<div class="col">
-			<img src="" alt="OBMC_homeimg" class="img-fluid w-100 d-block">
-		</div>
-	</div>
-</div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/school_logo/1784597998-88.png " alt="OBMC_logo" class="img-fluid rounded-circle" style="height: 60px; width: 60px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="container mt-5">
-<h2>O.B. Montessori Center</h2>
-<br><br>
-<h1>Caption/Line</h1>
-<br>
-<p>short description</p>
-</div>
+  <div class="hero">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
 
+    <div class="tint"></div>
+
+    <div class="hero-text container">
+      <h1 class="display-4 fw-bold">Welcome to OBMC</h1>
+      <p class="lead">Ahh paragraph.</p>
+      <a href="#" class="btn btn-primary btn-lg mt-2">Learn More</a>
+    </div>
+  </div>
+
+  <script src="https://jsdelivr.net"></script>
 </body>
 </html>
