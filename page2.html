@@ -37,6 +37,158 @@
         </li>
       </ul>
         <button href="https://obmontessori.orangeapps.ph/landing/obmontessori/" class="btn btn-primary" type="button">Portal</button>
+      <section class="hero">
+
+        <div class="slideshow">
+
+            <div class="slide active"
+                style="background-image: url('https://obmontessori.orangeapps.ph/landing/obmontessori/images/Las%20Pinas%20Facade.jpg');">
+            </div>
+
+            <div class="slide"
+                style="background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/fdabba98-61bf-4946-a1e2-246c208f13f8/1+20240226_094559+copy.jpg');">
+            </div>
+
+            <div class="slide"
+                style="background-image: url('https://images.squarespace-cdn.com/content/v1/636b5e138fd7c9613e2a8b61/c00bb232-be8d-4444-beb0-8382b654c5b7/OBMC+CASA+Classroom.jpg');">
+            </div>
+
+            <div class="slide"
+                style="background-image: url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/0bd933b3-baff-49ad-a136-becbc219422a/JAR_3796a.jpg');">
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">  
+
+            <h1>Courses Offered</h1>
+
+            <p>
+                Discover your potential and build your future with OBMC.
+            </p>
+
+            <a href="#courses" class="btn-blue">
+                Explore Courses
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="courses" id="courses">
+
+        <div class="container">
+
+            <h2>Our Academic Programs</h2>
+
+            <p class="description">
+                Explore the different educational programs offered at OBMC.
+                We provide learning experiences that help students grow and succeed.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="course-card">
+
+                        <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_T-wA8ylkkYx9p3xh24FPxJHLWe8AkLDUCPprgWGhQ&s=10"
+                        alt="Elementary classroom">
+
+                        <h4>Elementary Education</h4>
+
+                        <p>
+                            Helping young learners develop basic knowledge,
+                            creativity, and important life skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="course-card">
+
+                        <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqNKMMMnbKWmf5ITAbURd2ghcOlnins1CaRV4boxDWTg&s=10"
+                        alt="Students learning">
+
+                        <h4>Junior High School</h4>
+
+                        <p>
+                            Developing students' critical thinking,
+                            academic knowledge, and confidence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="course-card">
+
+                        <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUdX64d7WtgO33wPPHCxR4UzZ3u0xUJUDyKPPF53Cekw&s=10"
+                        alt="Senior high school students">
+
+                        <h4>Senior High School</h4>
+
+                        <p>
+                            Preparing students for college,
+                            future careers, and lifelong learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 OBMC. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script>
+
+        const slides = document.querySelectorAll(".slide");
+
+        let currentSlide = 0;
+
+        function changeSlide() {
+
+            slides[currentSlide].classList.remove("active");
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            slides[currentSlide].classList.add("active");
+
+        }
+
+        setInterval(changeSlide, 5000);
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
     </div>
   </div>
 </nav>
